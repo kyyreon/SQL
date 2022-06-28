@@ -1,0 +1,22 @@
+--- create a clothing store database
+
+create table clothing_store (id integer primary key,name text,price integer,quantity integer,condition text);
+insert into clothing_store values
+(1,'supreme tee',30,50,"new"),
+(2,'advanced tee',15,85,"slighly used"),
+(3,"basic tee",5,200,"very used"),
+(4,"light blue jeans",40,50,"new"),
+(5,"black jeans",40,50,"new"),
+(6,"ripped light blue jeans",55,20,"very used"),
+(7,"ripped black jeans",55,20,"very used"),
+(8,"shorts(all colors)",20,200,'new'),
+(9,"hats(all colors)",15,50,'new'),
+(10,"jordans",250,50,'new'),
+(11,"air forces",110,100,'new'),
+(12,"supreme hoodie",80,80,'new'),
+(13,'advanced hoodie',50,100,'slighly used'),
+(14,'basic hoodie',30,120,'very used'),
+(15,'underwear',3,1000,'new');
+--display the database order by price
+
+select * from clothing_store order by price;
